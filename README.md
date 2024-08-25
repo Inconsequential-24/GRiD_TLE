@@ -4,6 +4,8 @@
 
 This project aims to create an AI-powered size chart generator tailored for apparel sellers, with a focus on integration with e-commerce platforms like Flipkart. The goal is to improve the accuracy of size recommendations, which can lead to higher customer satisfaction and reduced return rates. The solution leverages Agglomerative Clustering to categorize customers based on their body measurements and subsequently uses a Random Forest classifier to provide personalized size suggestions.
 
+Note: GRiD SDE-> size-chart-prediction has the code files- for convenience, we have uploaded all the content of size-chart-prediction in the main branch too. 
+
 ## Table of Contents
 
 1. [Project Overview](#project-overview)
@@ -44,6 +46,14 @@ The project is organized into several directories:
 - **[tests/](#tests-directory)**: Contains unit tests for data preprocessing, clustering, model training, and prediction scripts.
 - **[README.md](#readme-file)**: The project documentation.
 - **[requirements.txt](#requirements-file)**: Lists the Python dependencies needed for the project.
+
+## Visualizations
+
+### Height vs Weight
+![Height vs Weight](height_vs_weight.png)
+
+### Plot Features
+![Plot Features](plot_features.png)
 
 ## Setup and Installation
 
