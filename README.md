@@ -4,18 +4,46 @@
 
 This project aims to create an AI-powered size chart generator tailored for apparel sellers, with a focus on integration with e-commerce platforms like Flipkart. The goal is to improve the accuracy of size recommendations, which can lead to higher customer satisfaction and reduced return rates. The solution leverages Agglomerative Clustering to categorize customers based on their body measurements and subsequently uses a Random Forest classifier to provide personalized size suggestions.
 
+## Table of Contents
+
+1. [Project Overview](#project-overview)
+2. [Project Structure](#project-structure)
+   - [Data Directory](#data-directory)
+   - [Processed Directory](#processed-directory)
+   - [Raw Directory](#raw-directory)
+   - [Models Directory](#models-directory)
+   - [Scripts Directory](#scripts-directory)
+   - [Tests Directory](#tests-directory)
+   - [README File](#readme-file)
+   - [Requirements File](#requirements-file)
+3. [Setup and Installation](#setup-and-installation)
+   - [Prerequisites](#prerequisites)
+   - [Installation Steps](#installation-steps)
+4. [Running the Project](#running-the-project)
+   - [Step 1: Data Preparation](#step-1-data-preparation)
+   - [Step 2: Perform Clustering](#step-2-perform-clustering)
+   - [Step 3: Train the Model](#step-3-train-the-model)
+   - [Step 4: Evaluate the Model](#step-4-evaluate-the-model)
+   - [Step 5: Make Predictions](#step-5-make-predictions)
+5. [Pipeline Overview](#pipeline-overview)
+6. [Challenges with Dataset](#challenges-with-dataset)
+   - [Missing Values](#missing-values)
+   - [Data Imbalance](#data-imbalance)
+7. [Testing](#testing)
+8. [License](#license)
+
 ## Project Structure
 
 The project is organized into several directories:
 
-- **data/**: Contains raw and processed data files.
-  - **processed/**: Includes the processed dataset for clustering and model training.
-  - **raw/**: Holds the original raw dataset.
-- **models/**: Stores the trained Random Forest model.
-- **scripts/**: Includes various scripts for clustering, training, evaluating, and making predictions based on the model.
-- **tests/**: Contains unit tests for data preprocessing, clustering, model training, and prediction scripts.
-- **README.md**: The project documentation.
-- **requirements.txt**: Lists the Python dependencies needed for the project.
+- **[data/](#data-directory)**: Contains raw and processed data files.
+  - **[processed/](#processed-directory)**: Includes the processed dataset for clustering and model training.
+  - **[raw/](#raw-directory)**: Holds the original raw dataset.
+- **[models/](#models-directory)**: Stores the trained Random Forest model.
+- **[scripts/](#scripts-directory)**: Includes various scripts for clustering, training, evaluating, and making predictions based on the model.
+- **[tests/](#tests-directory)**: Contains unit tests for data preprocessing, clustering, model training, and prediction scripts.
+- **[README.md](#readme-file)**: The project documentation.
+- **[requirements.txt](#requirements-file)**: Lists the Python dependencies needed for the project.
 
 ## Setup and Installation
 
@@ -87,3 +115,45 @@ To execute the tests, use the provided testing framework.
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
+
+## Detailed Section Links
+
+### Data Directory
+
+The `data/` directory contains all the data files used in the project.
+
+### Processed Directory
+
+The `processed/` directory within `data/` includes the cleaned and preprocessed dataset that is used for clustering and model training.
+
+### Raw Directory
+
+The `raw/` directory within `data/` holds the original raw dataset before any processing.
+
+### Models Directory
+
+The `models/` directory stores the trained Random Forest model that has been generated after training.
+
+### Scripts Directory
+
+The `scripts/` directory includes various Python scripts for different stages of the project:
+- Clustering the data
+- Training the machine learning model
+- Evaluating the model's performance
+- Making predictions based on input features
+
+### Tests Directory
+
+The `tests/` directory contains unit tests that verify the accuracy and reliability of each component of the project, including:
+- Data preprocessing
+- Clustering process
+- Model training
+- Prediction scripts
+
+### README File
+
+The `README.md` file provides documentation for the project, including setup instructions, project structure, and usage guidelines.
+
+### Requirements File
+
+The `requirements.txt` file lists all the Python dependencies required to run the project, ensuring that all necessary packages are installed.
