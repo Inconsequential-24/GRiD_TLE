@@ -61,6 +61,9 @@ The project is organized into several directories:
    ```
 
 3. **Install Dependencies**: Install the necessary Python packages using pip.
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Running the Project
 
@@ -68,21 +71,46 @@ The project is organized into several directories:
 
 Ensure that the `processed_data.csv` file is present in the `data/processed/` directory. This file should contain cleaned and preprocessed data ready for clustering.
 
+**Note**: The `data_preprocessing.py` script automatically handles NaN values by imputing them with the most frequent value (mode) or random valid entries, ensuring no data is lost due to missing values. The script then saves the cleaned dataset in a CSV file for subsequent steps.
+   ```bash
+   python3 scripts/data_preprocessing.py
+   ```
+   
+
 ### Step 2: Perform Clustering
 
 Run the clustering script to group the data based on body measurements. This will generate the `clustered_data.csv` file in the `data/processed/` directory.
+```bash
+python3 scripts/clustering.py
+```
+### Step 3: Analyze Clusters
 
-### Step 3: Train the Model
+Run the cluster_analysis.py script to analyze the clusters and generate visualizations.
+```bash
+python3 scripts/cluster_analysis.py
+```
+
+### Step 4: Train the Model
 
 Train the Random Forest model on the clustered data. The trained model will be saved in the `models/` directory.
-
-### Step 4: Evaluate the Model
+```bash
+python3 scripts/train_model.py
+```
+### Step 5: Evaluate the Model
 
 Evaluate the model's performance by running the evaluation script. This script will output metrics such as accuracy, precision, recall, and f1-score.
 
-### Step 5: Make Predictions
+```bash
+python3 scripts/evaluate_model.py
+```
+
+### Step 6: Make Predictions
 
 To predict the size cluster for a new set of user measurements, run the prediction script. Follow the prompts to input the measurements and receive a size recommendation.
+
+```bash
+python3 scripts/predict.py
+```
 
 ## Pipeline Overview
 
