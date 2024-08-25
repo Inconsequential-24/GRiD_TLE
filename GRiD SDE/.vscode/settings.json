@@ -1,0 +1,7 @@
+{
+    "python.analysis.extraPaths": [
+        "./size-chart-prediction/tests/test_",
+        "./size-chart-prediction/scripts/agglomerative_",
+        "./size-chart-prediction/scripts/agglomerative_"
+    ]
+}
