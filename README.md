@@ -55,8 +55,12 @@ The project is organized into several directories:
 ### Installation Steps
 
 1. **Clone the Repository**: Clone the project repository to your local machine and navigate into the project directory.
+   ```bash
+   git clone <repository-url>
+   cd size-chart-prediction
+   ```
 
-2. **Install Dependencies**: Install the necessary Python packages using pip.
+3. **Install Dependencies**: Install the necessary Python packages using pip.
 
 ## Running the Project
 
