@@ -47,13 +47,7 @@ The project is organized into several directories:
 - **[README.md](#readme-file)**: The project documentation.
 - **[requirements.txt](#requirements-file)**: Lists the Python dependencies needed for the project.
 
-## Visualizations
 
-### Height vs Weight
-![Height vs Weight](height_vs_weight.png)
-
-### Plot Features
-![Plot Features](plot_features.png)
 
 ## Setup and Installation
 
@@ -199,3 +193,11 @@ The `README.md` file provides documentation for the project, including setup ins
 ### Requirements File
 
 The `requirements.txt` file lists all the Python dependencies required to run the project, ensuring that all necessary packages are installed.
+
+## Visualizations
+
+### Height vs Weight
+![Height vs Weight](height_vs_weight.png)
+
+### Plot Features
+![Plot Features](plot_features.png)
