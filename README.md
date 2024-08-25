@@ -57,7 +57,7 @@ size-chart-prediction/
 1. Clone the Repository
    ```bash
    git clone <repository-url>
-   cd size-chart-prediction
+   cd size-chart-prediction```
 
 2.	Install Dependencies
     Install the necessary Python packages using pip:
